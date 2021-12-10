@@ -16,11 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     
 </head>
 <body>
-    <div class="container-fluid mb-3 m-0 p-0 " id="stickyheader" >
+    <div class="container-fluid  m-0 p-0 " id="stickyheader" >
         <div id="header" class="row p-0 m-0 w-100 justify-content-between ">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-3 p-1  " id="logo">
                 <img src="./assets/img/logo.png " >
@@ -58,8 +60,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="container   text-center mb-4 " id="content">
+    <div class="container-fluid p-0 ">
+        <div class="container    text-center mb-4  " id="content">
+            <div id="contentback">
+
+            </div>
             <form action="" class="">
                 <h3 id="urllink"  class="TikTok ">
                     TikTok link
@@ -68,15 +73,17 @@
                       </svg>                    
                     
                 </h3>
-                <input type="text" placeholder="Paste your link here!">
+                <input type="text" placeholder="Paste your link here! ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16" id="inputicon">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                  </svg> 
                 <input type="submit" value="Get Comments">
-                <a href="">
+                <a href="" >
                     How To Get Links?
                 </a>
             </form>
             <div id="platforms" class="" >
-                <h4 onclick="toggleplatform();">
-                    <span id="toggleplatform" >+</span>
+                <h4 id="choseplatform">
                     Choose Platform
                 </h4>
                 

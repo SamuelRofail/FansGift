@@ -7,7 +7,14 @@
 
 
 
-
+body{
+    background-color: #ccc;
+    background-image: url(../img/scattered-forcefields.svg);
+    background-position: center;
+    background-size: contain;
+    
+    
+}
 
 #stickyheader{
     position: sticky;
@@ -45,8 +52,9 @@
     color: #32155e;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 500;
-    font-family: 'Lobster', cursive;
+    font-weight: 400;
+/*     font-family: 'Lobster', cursive;
+ */    font-family: 'Readex Pro', sans-serif;
 
 }
 #header ul li ::after{
@@ -106,25 +114,47 @@
 
 #content {
     padding: 30px ;
-    border: 1px solid #7430dd;
-    border-radius: 20px;
+    position: relative;
+    border: 0px solid #7430dd;
     box-shadow: #7430dd 0 5px 10px 1px;
     transition: 0,3s;
-    background-color: #fff;
+    
+    
 
 }
+#content #contentback{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/a00cc210244ee0c8cd79e2a28b3a10fb.jpg);
+    background-color: #000;
+    background-blend-mode:screen;
+    background-position:center;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
 
 #content  h3{
     font-weight: 400;
     font-size: 32px;
-    width: 97%;
+    width: fit-content;
     margin: 10px auto;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.856);
+
+
 
 
 }
 #content .TikTok{
-    color:#eb3563;
+    color:#000;
+    
 }
 #content .Instagram{
     color: #933cb7;
@@ -147,7 +177,7 @@
     width: 100%;
     padding: 10px;
     display: block;
-    
+    padding-left: 28px;
     margin: 15px auto;
     font-weight: 500;
     font-size: 20px;
@@ -162,9 +192,10 @@
     width: 150px;
     padding: 10px;
     display: inline;
+
     margin: 5px auto;
-    border: 1px solid #7430dd;
-    background-color: #7430dd;
+    border: 1px solid #ffd146;
+    background-color: #f8d22b;
     color: #fff;
     font-weight: 400;
     border-radius: 15px;
@@ -173,64 +204,78 @@
 
 }
 #content form input[type=submit]:hover{
-    background-color: #32155e;
+    background-color: #d4ae04;
+    border-color: #d4ae04;
     color: #fff;
     transform: scale(0.9);
     transition: 0.3s;
 
 }
+#content form #inputicon{
+    color: #7e7e7e;
+    left: 8%;
+    position: absolute;
+    top: 22%;
+
+}
+
+
 #content form a{
     display: block;
     text-decoration: none;
-    color: #7430dd;
-    margin: 5px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.856);
+    width: fit-content;
+    padding: 3px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px auto;
+    transition: 0.1s;
+
 
 }
 #content form a:hover{
-    color: #32155e;
+    transition: 0.1s;
+
+    color: #d4ae04;
 
 }
 #content #platforms{
     margin-top: 20px;
-    overflow: hidden;
-    height:55px;
-
 }
 #content #platforms h4{
-    color: #7430dd;
+    color: #000;
     font-weight: 500;
     font-size: 32px;
     /* margin-bottom: 20px; */
-    height: 50px;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
+    padding: 7px;
+    margin: 15px auto;
+    cursor: context-menu;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.856);
+
     
 }
-#content #platforms h4 span{
-    display: inline-block;
-    transform: rotate(0deg);
-    cursor: pointer;
-    color: #32155e;
-    font-size: 34px;
-    font-weight: 600;
-}
+
 #content #platforms ul{
     align-items: center;
     list-style: none;
-}
+    border-radius: 15px;
+/*     background-color: rgba(255, 255, 255, 0.856);
+ */}
 
 
 
 #content #platforms #list:nth-child(1) .card:hover .card-body{
-    box-shadow: #ff3769 0px 0px 10px 2px;
-    border-color: #ff3769;
+    box-shadow: #000 0px 0px 10px 2px;
+    border-color: #000;
 
     transition: 0.3s;
 
 } 
 #content #platforms #list:nth-child(1) .card:hover .card-header{
-    box-shadow: #ff3769 0px 0px 10px 2px;
-    border-color: #ff3769;
+    box-shadow: #000 0px 0px 10px 2px;
+    border-color: #000;
 
     transition: 0.3s;
 
@@ -241,7 +286,7 @@
 } 
 #content #platforms #list:nth-child(2) .card:hover .card-body{
     box-shadow: #933cb7 0px 0px 10px 2px;
-    border-color: #a59ea8;
+    border-color: #933cb7;
 
     transition: 0.3s;
 
@@ -283,7 +328,7 @@
     box-shadow: #ff0000 0px 0px 10px 2px;
     transition: 0.3s;
     border-color: #ff0000;
-
+    
 
 } 
 #content #platforms #list:nth-child(4) .card:hover img{
@@ -298,11 +343,11 @@
     height: 180px;
     width: 80%;
     cursor: pointer;
+    border-radius: 10px;
     margin: 0 auto;
 
 }
 #list .card-header{
-    border: 0px solid #7430dd; 
     border-bottom: 0px ;
     height: 130px;
     width: 100%;
@@ -313,19 +358,20 @@
     margin: 0 auto;
     padding: 0;
     transition: 0.2s;
+    border: 0px solid #fff;
     
 }
 #list .card-header img{
     width: 100%;
     opacity: 0.5;
-    height: 130px;
 
+    height: 130px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
     margin: 0 auto;
-    border: 0px solid #7430dd;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    
     border-bottom: 0px;
     transition: 0.2s;
     
@@ -336,6 +382,11 @@
 }
 #list:nth-child(1) .card-header{
     background-color: #000;
+    border: 3px solid #000;
+}
+#list:nth-child(1) .card-header img{
+    border: 3px solid #000;
+
 }
 #list:nth-child(2) .card-header{
     background-color: #933cb7;
@@ -353,6 +404,7 @@
 
 #list:nth-child(1) .card-body{
     border-color: #000;
+    
 }
 #list:nth-child(2) .card-body{
     border-color: #933cb7;
@@ -371,14 +423,15 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 24px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Readex Pro', sans-serif;
     border-top: 0px ;
-    font-weight: 500;
+    font-weight: 300;
     width: 100%;
     margin: 0 auto;
     transition: 0.2s;
     height: 70px;
-    padding : 5px
+    padding : 5px;
+    
 
 }
 
@@ -680,17 +733,18 @@
 
 #aboutus h2 span:nth-child(1){
     color: #ffd146;
-    font-family: 'Lobster', cursive;
-
+    font-family: 'Readex Pro', sans-serif;
 
 }
 #aboutus{
-    background-color: #32155e38;
+    background-color: rgba(238, 238, 238, 0.747);
+    border: 1px solid #7430dd;
+    box-shadow: #7430dd 0 5px 10px 1px;
+    border-radius: 5px;
 }
 #aboutus h2 span:nth-child(2){
-    color: white;
-    font-family: 'Lobster', cursive;
-
+    color: #7430dd;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 #aboutus p{
@@ -698,7 +752,7 @@
     padding-left: 40px;
 }
 #aboutus p a {
-    color: #6600ff83;
+    color: #ffd146;
 }
 
 #footer p {
@@ -740,6 +794,9 @@
         font-size: 22px;
         padding: 5px;
     }
+    #content form #inputicon{
+        left: 9%;
+    }
     
 }
 
@@ -767,7 +824,10 @@
     #list:nth-child(4) .card-header{
         padding-top: 10px;
     }
-    
+    #content form #inputicon{
+        top: 16.5% ;
+        left: 10%;
+    }
     
 }
 
@@ -786,6 +846,11 @@
         width: 70%;
         margin: 10px auto;
     }
+    #content form #inputicon{
+        top: 16.5% ;
+        left: 11%;
+    }
+    
     
 }
 @media screen and (max-width : 576px){
@@ -884,6 +949,375 @@
         
     
     }
+    #content form #inputicon{
+        top: 17% ;
+        left: 12%;
+    }
     
 
+}
+
+@media screen and (max-width : 444px){
+    #content form #inputicon{
+        top: 17% ;
+        left: 13%;
+    }
+}
+@media screen and (max-width : 320px){
+    #content form #inputicon{
+        display: none;
+    }
+    #content form input[type=text]{
+        padding-left: 2px;
+        width: 100%;
+    }
+    #list .card{
+        width: 70%;
+    }
+    
+    #list:nth-child(1) .card{
+        float: none;
+        margin-top: 10px;
+    }
+    #list:nth-child(2) .card{
+        position:relative;
+        left: 0;
+        top: 0;
+    }
+    #list:nth-child(3) .card{
+        float: none;
+
+    }
+    #list:nth-child(4) .card{
+        float: none;
+        position:relative;
+        left: 0;
+        top: 0;
+        
+    }
+}
+
+
+/* register page */
+
+#register {
+    background-color: transparent;
+}
+#register img{
+    height: 120px;
+
+}
+#register h1{
+    display: inline-block;
+}
+#register #registerabout{
+    border: 0px solid #000;
+    
+}
+#register #registerabout h1{
+    margin-top: 35%;
+    font-size: 52px; 
+    color: #ffd146;
+    font-weight: 600;
+}
+#register #registerabout h2 {
+    font-size: 38px;
+}
+#register #registerabout h2 span{
+    font-size: 28px;
+}
+#register #login{
+    background-color: rgba(204, 204, 204, 0.404);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y:visible;
+
+}
+#register #signin{
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+
+    
+}
+#register #signin form {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+#register #signin form input {
+    display: block;
+    margin: 8px auto;
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ffd146;
+}
+#register #signin form input:focus{
+    outline-width: 0;
+    
+}
+
+#register #signin form input[type=submit]{
+    width: 25%;
+    background-color: #ffd146;
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    border-width: 1px;
+}
+#register #signin form input[type=submit]:hover{
+    background-color: #ff7919;
+    border-color: #ff7919;
+    color: #fff;
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+#register #signin form .input-group{
+    display: inline-block;
+    width: 70%;
+}
+#register #signin form .input-group input{
+    display: inline;
+    width: 100%;
+    transition: 0.2s;
+}
+#register #signin form .input-group input:focus{
+    outline: 0px solid #ffd146;
+    z-index: 0;
+    transition: 0.1s;
+}
+#register #signin form .input-group input:focus  .input-group-text{
+    border: 4px solid #000;
+    z-index: 99;
+}
+#register #signin form .input-group .input-group-text{
+    border: 0px solid #000;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    background-color: transparent;
+    right: 4%;
+    padding: 3px;
+}
+
+#register #signin button{
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    top: 0;
+}
+
+
+#register #signin button span {
+    font: 1.2em;
+}
+#register #signin button:hover span{
+    text-decoration: underline;
+
+}
+#register #signin button:focus{
+    outline-width: 0;
+}
+#register #signup{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: -700px;
+    transition: 0.3s;
+
+
+}
+#register #signup form {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+#register #signup form input {
+    display: inline;
+    margin: 8px auto;
+    width: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ffd146;
+}
+#register #signup form input:focus{
+    outline-width: 0;
+    
+}
+
+#register #signup form input[type=submit]{
+    width: 25%;
+    background-color: #ffd146;
+    transition: 0.4s;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    border-width: 1px;
+}
+#register #signup form input[type=submit]:hover{
+    background-color: #ff7919;
+    border-color: #ff7919;
+    color: #fff;
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+#register #signup form .input-group{
+    display: inline-block;
+    width: 40%;
+}
+#register #signup form .input-group input{
+    display: inline;
+    width: 100%;
+    z-index: 0;
+
+
+}
+#register #signup form .input-group input:focus{
+    outline-width: 0;
+}
+#register #signup form .input-group input:focus  .input-group-text{
+    border: 4px solid #000;
+    z-index: 99;
+}
+#register #signup form .input-group  .input-group-text{
+    border: 0px solid #000;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    background-color: transparent;
+    right: 4%;
+    padding: 3px;
+}
+
+
+#register #signup button{
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    top: 0;
+}
+
+
+#register #signup button span {
+    font: 1.2em;
+}
+#register #signup button:hover span{
+    text-decoration: underline;
+
+}
+#register #signup button:focus{
+    outline-width: 0;
+}
+#register #externallogin{
+    border: 0px solid #000;
+    margin-bottom: 7px;
+}
+#register #externallogin span{
+    border: 1px solid #ffd146;
+    background-color: #ffd146;
+    color: #fff;
+    width:30px;
+    text-align: center;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 1px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+#register #externallogin #links{
+    width: 50%;
+    margin: 0 auto;
+    border: 0px solid red;
+    padding: 0;
+    margin-bottom: 30px;
+
+}
+#register #externallogin #links #linkcard{
+    border-radius: 10px;
+    margin: 3px auto;
+    height: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    
+
+}
+#register #externallogin #links #linkcard:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+#register #externallogin #links #linkcard div{
+    font-size: 16px;
+}
+#register #externallogin #links #linkcard div svg{
+    width: 30px;
+    height: 50px;
+    position: relative;
+    margin-top: 5px;
+    
+}
+#register #externallogin #links #linkcard div:nth-child(2){
+    padding-top: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 0;
+    
+
+
+}
+#register #externallogin #links #linkcard div:nth-child(1){
+    padding-top: 0px ;
+}
+
+#register #externallogin #links #linkcard:nth-child(1) {
+    background-color: #ea4335;
+    
+
+}
+#register #externallogin #links #linkcard:nth-child(2){
+    background-color: #000;
+}
+#register #externallogin #links #linkcard:nth-child(3){
+    background-color: #3b5998;
+    
+} 
+
+
+@media screen and (max-width : 992px) {
+    #register #externallogin #links{
+        width: 70%;
+    }    
+}
+@media screen and (max-width : 768px){
+    #register #registerabout h1{
+        font-size: 20px;
+        margin-top: 0;
+        
+    }
+    #register #registerabout h2{
+        font-size: 18px;
+    }
+    #register #registerabout h2 span{
+        font-size: 16px;
+
+    }
+}
+@media screen and (max-width : 340px){
+    #register #externallogin #links{
+        width: 90%;
+    }  
 }
