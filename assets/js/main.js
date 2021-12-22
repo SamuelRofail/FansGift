@@ -151,3 +151,52 @@ function changeregister(str){
         reg.style.left = "-700px";
     }
 }
+
+function toggledash (){
+    var dash = document.getElementById("sidemenu");
+    console.log(dash);
+}
+
+
+function togglelink(str){
+    var link = document.getElementById(str);
+    var plus = document.getElementById(str+ "-plus");
+    console.log(link.offsetHeight);
+    
+    if(link.offsetHeight == "50"){
+        if(str == "play"){
+            document.getElementById(str).style.height = "180px";
+        }
+        else {
+            document.getElementById(str).style.height = "140px";
+        }
+        document.getElementById(str).style.transition = "0.3s";
+        plus.style.transform = "rotate(45deg)";
+    }
+    else{
+        document.getElementById(str).style.height = "50px";
+        document.getElementById(str).style.transition = "0.3s";
+        plus.style.transform = "rotate(0deg)";
+        
+    }
+    
+}
+
+function togglesetting(){
+    var setting = document.getElementById("setting");
+    if (setting.className == "active"){
+        setting.style.top = "-100px";
+        console.log("aa");
+        setting.className = "";
+
+    }
+    else {
+        setting.className = "active";
+
+        setting.style.top = "0";
+        console.log("ba");
+
+    }
+
+
+}

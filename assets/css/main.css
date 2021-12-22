@@ -1022,6 +1022,7 @@ body{
 }
 #register #registerabout h2 {
     font-size: 38px;
+    background-color: #fff;
 }
 #register #registerabout h2 span{
     font-size: 28px;
@@ -1321,3 +1322,481 @@ body{
         width: 90%;
     }  
 }
+
+
+/* Dashboard page */
+
+#sidemenu{
+    background-color: #687abe;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#sidemenu #dashboard-profile{
+    border-bottom: 2px solid #fff;
+    height: 110px;
+}
+#sidemenu #dashboard-profile a {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:#687abe ;
+    text-decoration: none;
+
+}
+#sidemenu #dashboard-profile img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.4s;
+    border: 2px solid #495685;
+
+}
+#sidemenu #dashboard-profile img:hover{
+    border-width: 8px;
+    transform: scale(1.1);
+    background-origin: padding-box;
+    transition: 0.2s;
+}
+
+#sidemenu #dashboard-profile button{
+    background-color: transparent;
+    border-width: 0px;
+    color: #32155e;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-weight: 500;
+}
+#sidemenu #dashboard-profile p{
+    font-family: 'Readex Pro', sans-serif;
+    color: #fff;
+    margin: 30px auto;
+
+}
+#sidemenu #dashboard-links {
+    list-style: none;
+    
+}
+#sidemenu #dashboard-links li{
+    border-bottom: 3px solid #495685;
+    
+}
+
+#sidemenu #dashboard-links li #dashboard h3{
+    padding-left: 0;
+}
+
+
+
+#sidemenu #dashboard-links .active {
+    background-color: #00acee;
+    transition: 0.3s;
+}
+#sidemenu #dashboard-links .active div {
+    background-color: #00acee;
+    overflow: hidden;
+    height: 50px;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+#sidemenu #dashboard-links li div{
+    overflow: hidden;
+    height: 50px;
+    padding-bottom: 10px;  
+    color: #fff; 
+}
+
+#sidemenu #dashboard-links li h3{
+    height: 50px;
+    padding-top: 8px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+#sidemenu #dashboard-links li h3 span{
+    font-weight: 600;
+    cursor: pointer;
+    padding-left: 5px;
+    /* transform: rotate(45deg); */
+    transition: 0.3s;
+    position: relative;
+    display: inline-block;
+    top: 2px;
+}
+
+#sidemenu #dashboard-links li a{
+    text-decoration: none;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid #fff;
+    cursor: pointer;
+    
+}
+#sidemenu #dashboard-links li a svg{
+    width: 40px;
+    border: 0px solid #fff;
+    margin-top: 0;
+    padding: 6px 4px;
+    height: 40px;
+    
+
+}
+
+#sidemenu #dashboard-links li a h4{
+    border: 0px solid #fff;
+    margin-top: 4px;
+    text-align: left;
+
+}
+
+
+#dashboard-header{
+    height: 50px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: #687abe 0 3px 3px;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+#dashboard-header div {
+    height: 50px;
+}
+#dashboard-header #togglemenu{
+    text-align: center;
+    display: none;
+}
+#dashboard-header #togglemenu svg{
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    cursor: pointer;;
+    transition: 0.4s;
+    background-color: #fff;
+    fill: #000;
+    border-radius: 3px;
+}
+#dashboard-header #togglemenu svg:hover{
+    background-color: #000;
+    fill: #fff;
+    transition: 0.4s;
+}
+#dashboard-header h2{
+    margin-top: 5px;
+    color: #ff7919;
+}
+#dashboard-header .input-group{
+    height: 40px;
+    margin-top: 4px;
+    border: 0px solid #7631de;
+}
+
+#dashboard-header .input-group input{
+    background-color: #fff;
+}
+#dashboard-header .input-group input:focus{
+    z-index: 0;
+}
+#dashboard-header .input-group input:focus .input-group-text{
+    z-index: 99;
+}
+#dashboard-header .input-group .input-group-text{
+    position: relative;
+    right: 50px;
+    border: 1px solid transparent;
+}
+
+#dashboard-header a {
+    height: 50px;
+    text-decoration: none;
+    color: #495685;
+    text-align: center;
+}
+#dashboard-header a svg{
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+
+}
+#dashboard-header button{
+    height: 50px;
+    text-decoration: none;
+    color: #495685;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -1px;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    background-origin:border;
+    
+
+}
+#dashboard-header button:focus{
+    outline-width: 0px;
+}
+
+#dashboard-header button svg{
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+}
+
+#dashboard-header  #setting {
+    width: 100%;
+    position: relative;
+    top: -100px;
+    padding: 0;
+    transition: 0.2s;
+    z-index: -1;
+    
+}
+#dashboard-header  #setting ul{
+    list-style: none;
+    background-color: #495685;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    
+
+
+}
+#dashboard-header  #setting ul li{
+    height: 50px;
+
+
+    
+}
+#dashboard-header  #setting ul li button{
+    background-color: #495685;
+    border: 1px solid #495685;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 80%;
+    height: 100%;
+    
+
+
+}
+#dashboard-header  #setting ul li button svg{
+    fill: #fff;
+    cursor: pointer;
+}
+#dashboard-header  #setting ul li button img{
+    height: 28px;
+    width: 28px;
+
+    border: 1px solid #fff;
+    border-radius: 50% ;
+    
+    transition: 0.2s;
+
+
+}
+#dashboard-header #setting  ul li button:hover img{
+    border-width: 3px;
+    transform: scale(1.1);
+    
+    transition: 0.2s;
+}
+
+
+/* dash-allpackage page */
+
+#allpackages{
+    text-align: center;
+}
+#allpackages h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#allpackages p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+}
+#allpackages p a{
+    color: #495685;
+}
+
+#allpackages table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+
+}
+#allpackages table thead{
+    border: 1px solid #687abe;
+    background-color: #ffd146;
+    
+
+}
+#allpackages table thead th{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#allpackages table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#allpackages table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#allpackages table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+#allpackages table tr td button{
+    background-color: transparent;
+    border-width: 0px;
+    width: 47%;
+    height: 100%;
+    padding-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#allpackages table tr td button svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: #687abe;
+
+}
+#allpackages table tr:nth-child(even) td button svg {
+    fill: #fff;
+}
+
+
+/* dash-addpackage */
+
+#addpackages{
+    text-align: center;
+    }
+#addpackages h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#addpackages p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+}
+#addpackages p a{
+    color: #495685;
+
+}
+/* #addpackages div{
+    width: 0%;
+    margin: 3px auto;
+    border: 1px solid #000;
+
+} */
+
+
+#addpackages  form{
+    width: 80%;
+    margin: 3px auto;
+    text-align: center;
+    background-color: #687bbe15;
+    
+    border-radius: 15px;
+    padding: 10px;
+
+
+}
+#addpackages  form div{
+    margin-top: 15px ;
+
+}
+#addpackages  form div div{
+    text-align: center;
+}
+#addpackages  form select {
+    display: block;
+    width: 50%;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+#addpackages  form h4{
+    color: #687abe;
+}
+#addpackages  form input{
+    margin : 1px auto;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #fff;
+    background-color: #ffd146;
+    font-size: 18px;
+
+
+    
+}
+#addpackages  form input:focus{
+    outline-width: 0;
+}
+#addpackages  form select {
+    display: block;
+    width: 80%;
+    border: 1px solid #687abe;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffd146;
+    color: #687abe;
+    height: 38px;
+    font-size: 18px;
+}
+#addpackages  form select:focus{
+    outline-width: 0;
+}
+#addpackages  form select option{
+    padding: 55px;
+    background-color: #ffd146;
+    color: #687abe;
+}
+
+#addpackages  form input[type=submit]{
+    width: 40%;
+    margin: 3px auto;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #687abe;
+    color: #ffd146;
+    
+
+
+}
+#addpackages  form input[type=submit]:hover{
+    transform: scale( 0.9);
+    transition: 0.2s;
+    background-color: #ffd146;
+    color: #fff;
+}
+
+
+
+
+
