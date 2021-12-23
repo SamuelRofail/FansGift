@@ -1640,6 +1640,14 @@ body{
     }
     
 }
+@media screen and (max-width : 768px){
+    #dashboard-header h2{
+        font-size: 28px;
+        width: 150%;
+
+
+    }
+}
 @media screen and (max-width : 576px){
     #dashboard-header .input-group input{
         display: none;
@@ -1650,6 +1658,12 @@ body{
         color:#fff;
         transition: 0.4s;
     }
+    #dashboard-header h2{
+        font-size: 24px;
+        width: 200%;
+        padding-top: 4px;
+    }
+    
     #dashboard-header .input-group{
     }
     #dashboard-header .input-group .input-group-text{
@@ -1667,6 +1681,11 @@ body{
         padding: 0;
     }
 
+}
+@media screen and (max-width : 406px){
+    #dashboard-header h2{
+        font-size: 24px;
+    }
 }
 
 
@@ -1686,6 +1705,7 @@ body{
     color: #495685;
     font-weight: 500;
     font-size: 16px;
+    background-color: #fff;
     font-family: 'Readex Pro', sans-serif;
     padding: 3px;
 }
@@ -1766,6 +1786,8 @@ body{
     font-size: 16px;
     font-family: 'Readex Pro', sans-serif;
     padding: 3px;
+    background-color: #fff;
+
 }
 #addpackages p a{
     color: #495685;
