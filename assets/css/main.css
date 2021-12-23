@@ -1334,6 +1334,7 @@ body{
     left: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: 0.4s;
 }
 #sidemenu #dashboard-profile{
     border-bottom: 2px solid #fff;
@@ -1390,6 +1391,7 @@ body{
 
 #sidemenu #dashboard-links li #dashboard h3{
     padding-left: 0;
+
 }
 
 
@@ -1551,7 +1553,7 @@ body{
 #dashboard-header  #setting {
     width: 100%;
     position: relative;
-    top: -100px;
+    top: -500px;
     padding: 0;
     transition: 0.2s;
     z-index: -1;
@@ -1608,10 +1610,71 @@ body{
 }
 
 
+@media screen and (max-width : 1200px){
+    #sidemenu #dashboard-profile p{
+        font-size: 14px;
+    }
+    #sidemenu #dashboard-links li h3{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width : 992px){
+    #sidemenu #dashboard-profile p{
+        font-size: 16px;
+    }
+    #sidemenu {
+        position: absolute;
+        top: 50px;
+        left: -900px;
+        width: 90%;
+        z-index: 99;
+    }
+
+    #dashboard-header #togglemenu{
+        display: block;
+    }
+    #sidemenu #dashboard-links li #dashboard h3{
+        text-align: left;
+        
+        
+    }
+    
+}
+@media screen and (max-width : 576px){
+    #dashboard-header .input-group input{
+        display: none;
+        position: relative;
+        top: 45px;
+        border-radius: 10px;
+        background-color: #495685;
+        color:#fff;
+        transition: 0.4s;
+    }
+    #dashboard-header .input-group{
+    }
+    #dashboard-header .input-group .input-group-text{
+        right: 10%;
+        top:0px;
+        position: absolute;
+
+    }
+    #dashboard-header .input-group .input-group-text svg {
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        fill: #495685;
+        cursor: pointer;
+        padding: 0;
+    }
+
+}
+
+
 /* dash-allpackage page */
 
 #allpackages{
     text-align: center;
+    margin-top: 25px;
 }
 #allpackages h3{
     font-size: 30px;
@@ -1634,6 +1697,7 @@ body{
     width: 80%;
     margin: 5px auto;
     border: 1px solid #687abe;
+    background-color: #fff;
 
 }
 #allpackages table thead{
@@ -1687,6 +1751,8 @@ body{
 
 #addpackages{
     text-align: center;
+    margin-top: 25px;
+
     }
 #addpackages h3{
     font-size: 30px;
@@ -1780,7 +1846,7 @@ body{
 
 #addpackages  form input[type=submit]{
     width: 40%;
-    margin: 3px auto;
+    margin: 10px auto;
     cursor: pointer;
     transition: 0.2s;
     background-color: #687abe;

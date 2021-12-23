@@ -155,6 +155,20 @@ function changeregister(str){
 function toggledash (){
     var dash = document.getElementById("sidemenu");
     console.log(dash);
+    if (dash.classList.contains("active")){
+        dash.classList.remove("active");
+        dash.style.left = "-900px";
+        dash.style.transition ="0.4s";
+    }
+    else{
+        dash.classList.add("active");
+        dash.style.left = "0";
+        dash.style.transition ="0.4s";
+        document.getElementById("search").style.display ="none";
+
+
+    }
+    console.log(dash.classList);
 }
 
 
@@ -185,7 +199,8 @@ function togglelink(str){
 function togglesetting(){
     var setting = document.getElementById("setting");
     if (setting.className == "active"){
-        setting.style.top = "-100px";
+        setting.style.top = "-500px";
+        setting.style.transition = "0.2s"
         console.log("aa");
         setting.className = "";
 
@@ -198,5 +213,22 @@ function togglesetting(){
 
     }
 
+
+}
+
+function togglesearch(){
+    var input = document.getElementById("search");
+    if (input.classList.contains("active")){
+        input.classList.remove("active");
+        input.style.display = "none";
+        input.style.transition = "0.4s";
+    }
+    else{
+        input.classList.add("active");
+        input.style.display = "block";
+        input.style.transition = "0.4s";
+
+    }
+    console.log(input);
 
 }
