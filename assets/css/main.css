@@ -1884,7 +1884,332 @@ body{
     color: #fff;
 }
 
+/* dash-allspecial page */
+
+#allspecial{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+#allspecial h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#allspecial p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+}
+#allspecial p a{
+    color: #495685;
+}
+#allspecial table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+    background-color: #fff;
+
+}
+#allspecial table thead{
+    border: 1px solid #687abe;
+    background-color: #ffd146;
+    
+
+}
+#allspecial table thead th{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#allspecial table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#allspecial table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#allspecial table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+#allspecial table tr td button{
+    background-color: transparent;
+    border-width: 0px;
+    width: 47%;
+    height: 100%;
+    padding-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#allspecial table tr td button svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: #687abe;
+
+}
+#allspecial table tr:nth-child(even) td button svg {
+    fill: #fff;
+}
+
+/* dash-addspecial page */
+#addspecial{
+    text-align: center;
+    margin-top: 25px;
+
+    }
+#addspecial h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#addspecial p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+    background-color: #fff;
+
+}
+#addspecial p a{
+    color: #495685;
+
+}
 
 
 
+#addspecial  form{
+    width: 80%;
+    margin: 3px auto;
+    text-align: center;
+    background-color: #687bbe15;
+    
+    border-radius: 15px;
+    padding: 10px;
 
+
+}
+#addspecial  form div{
+    margin-top: 15px ;
+
+}
+#addspecial  form div div{
+    text-align: center;
+}
+
+#addspecial  form h4{
+    color: #687abe;
+}
+#addspecial  form input{
+    margin : 1px auto;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #fff;
+    background-color: #ffd146;
+    font-size: 18px;
+
+
+    
+}
+#addspecial  form input:focus{
+    outline-width: 0;
+}
+
+
+#addspecial  form input[type=submit]{
+    width: 40%;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #687abe;
+    color: #ffd146;
+    
+
+
+}
+#addspecial  form input[type=submit]:hover{
+    transform: scale( 0.9);
+    transition: 0.2s;
+    background-color: #ffd146;
+    color: #fff;
+}
+
+/* dash-allregular page */
+
+#allregular{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+#allregular h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#allregular p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+}
+#allregular p a{
+    color: #495685;
+}
+#allregular table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+    background-color: #fff;
+
+}
+#allregular table thead{
+    border: 1px solid #687abe;
+    background-color: #ffd146;
+    
+
+}
+#allregular table thead th{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#allregular table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#allregular table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#allregular table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+#allregular table tr td button{
+    background-color: transparent;
+    border-width: 0px;
+    width: 47%;
+    height: 100%;
+    padding-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#allregular table tr td button svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: #687abe;
+
+}
+#allregular table tr:nth-child(even) td button svg {
+    fill: #fff;
+}
+
+/* dash-addregular page */
+#addregular{
+    text-align: center;
+    margin-top: 25px;
+
+    }
+#addregular h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#addregular p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+    background-color: #fff;
+
+}
+#addregular p a{
+    color: #495685;
+
+}
+
+
+
+#addregular  form{
+    width: 80%;
+    margin: 3px auto;
+    text-align: center;
+    background-color: #687bbe15;
+    
+    border-radius: 15px;
+    padding: 10px;
+
+
+}
+#addregular  form div{
+    margin-top: 15px ;
+
+}
+#addregular  form div div{
+    text-align: center;
+}
+
+#addregular  form h4{
+    color: #687abe;
+}
+#addregular  form input{
+    margin : 1px auto;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #fff;
+    background-color: #ffd146;
+    font-size: 18px;
+
+
+    
+}
+#addregular  form input:focus{
+    outline-width: 0;
+}
+
+
+#addregular  form input[type=submit]{
+    width: 40%;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #687abe;
+    color: #ffd146;
+    
+
+
+}
+#addregular  form input[type=submit]:hover{
+    transform: scale( 0.9);
+    transition: 0.2s;
+    background-color: #ffd146;
+    color: #fff;
+}
