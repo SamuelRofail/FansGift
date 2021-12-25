@@ -158,12 +158,14 @@ function toggledash (){
     if (dash.classList.contains("active")){
         dash.classList.remove("active");
         dash.style.left = "-900px";
-        dash.style.transition ="0.4s";
+        dash.style.transition ="1s";
     }
     else{
         dash.classList.add("active");
         dash.style.left = "0";
-        dash.style.transition ="0.4s";
+        
+        dash.style.width = "90%";
+        dash.style.transition ="0.5s";
         document.getElementById("search").style.display ="none";
 
 

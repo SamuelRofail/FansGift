@@ -1626,7 +1626,7 @@ body{
         position: absolute;
         top: 50px;
         left: -900px;
-        width: 90%;
+        
         z-index: 99;
     }
 
@@ -2212,4 +2212,29 @@ body{
     transition: 0.2s;
     background-color: #ffd146;
     color: #fff;
+}
+
+/* dash-game1 page */
+#game1{
+    text-align: center;
+    margin:  25px auto;
+    }
+#game1 h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#game1 p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+    background-color: #fff;
+
+}
+#game1 p a{
+    color: #495685;
+
 }
