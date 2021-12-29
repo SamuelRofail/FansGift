@@ -997,6 +997,83 @@ body{
     }
 }
 
+/* showpost page */
+#showpost #contentback{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/a00cc210244ee0c8cd79e2a28b3a10fb.jpg);
+    background-color: #000;
+    background-blend-mode:screen;
+    background-position:center;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+#showpost{
+    padding: 30px ;
+    position: relative;
+    border: 0px solid #7430dd;
+    box-shadow: #7430dd 0 5px 10px 1px;
+    margin-top: 10px;
+}
+#showpost #post{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #7430dd;
+    border-radius: 10px;
+    background-color: #fff;
+
+}
+#showpost #postinfo{
+    width: 80%;
+    margin: 5px auto;
+}
+#showpost #postinfo h4{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.582);
+
+}
+#showpost table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+    background-color: #fff;
+
+}
+#showpost table thead{
+    border: 1px solid #687abe;
+    background-color: #000;
+    
+
+}
+#showpost table thead th{
+    color: #fff;
+}
+#showpost table thead th:first-child{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#showpost table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#showpost table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#showpost table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+
 
 /* register page */
 
@@ -1329,13 +1406,13 @@ body{
 #sidemenu{
     background-color: #687abe;
     min-height: 100vh;
-    position: sticky;
-    top: 0;
-    left: 0;
     overflow-y: auto;
     overflow-x: hidden;
     transition: 0.4s;
+    
 }
+
+
 #sidemenu #dashboard-profile{
     border-bottom: 2px solid #fff;
     height: 110px;
@@ -1383,6 +1460,7 @@ body{
 #sidemenu #dashboard-links {
     list-style: none;
     
+    
 }
 #sidemenu #dashboard-links li{
     border-bottom: 3px solid #495685;
@@ -1391,6 +1469,7 @@ body{
 
 #sidemenu #dashboard-links li #dashboard h3{
     padding-left: 0;
+    text-align: left;
 
 }
 
@@ -1686,6 +1765,11 @@ body{
     #dashboard-header h2{
         font-size: 24px;
     }
+    #dashboard-header  #setting {
+        width: 180%;
+        left: -20px;    
+    }
+
 }
 
 
@@ -1722,7 +1806,7 @@ body{
 }
 #allpackages table thead{
     border: 1px solid #687abe;
-    background-color: #ffd146;
+    background-color: #000;
     
 
 }
@@ -1918,7 +2002,7 @@ body{
 }
 #allspecial table thead{
     border: 1px solid #687abe;
-    background-color: #ffd146;
+    background-color: #000;
     
 
 }
@@ -2083,7 +2167,7 @@ body{
 }
 #allregular table thead{
     border: 1px solid #687abe;
-    background-color: #ffd146;
+    background-color: #000;
     
 
 }
@@ -2218,8 +2302,9 @@ body{
 #game1{
     text-align: center;
     margin:  25px auto;
+    overflow: auto;    
     }
-#game1 h3{
+#game1 h2{
     font-size: 30px;
     font-weight: 600;
     color: #ff7919;
@@ -2238,3 +2323,109 @@ body{
     color: #495685;
 
 }
+
+#game1 table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+    background-color: #fff;
+
+}
+#game1 table thead{
+    border: 1px solid #687abe;
+    background-color: #000;
+    
+
+}
+#game1 table thead th{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#game1 table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#game1 table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#game1 table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+#game1 table tr td a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+#game1 table tr:nth-child(even) td a{
+    color: #fff;
+
+}
+
+
+/* dash-gamedetail page */
+#gamedetail{
+    text-align: center;
+    margin:  25px auto;
+    overflow: auto;    
+    }
+#gamedetail h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff7919;
+    padding: 5px;
+}
+#gamedetail p{
+    color: #495685;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Readex Pro', sans-serif;
+    padding: 3px;
+    background-color: #fff;
+
+}
+#gamedetail p a{
+    color: #495685;
+
+}
+
+#gamedetail table{
+    width: 80%;
+    margin: 5px auto;
+    border: 1px solid #687abe;
+    background-color: #fff;
+
+}
+#gamedetail table thead{
+    border: 1px solid #687abe;
+    background-color: #000;
+    
+
+}
+#gamedetail table thead th{
+    width: 20%;
+    padding: 5px;
+    border-right: 1px solid #687abe;
+    color: #fff;
+}
+#gamedetail table tr:nth-child(even) {
+    background-color: #687abe;
+    color: #fff;
+}
+#gamedetail table tr td{
+    border-right: 1px solid #687abe;
+    padding: 5px;
+    font-size: 16px;
+}
+#gamedetail table tr:nth-child(even) td {
+        border-right: 1px solid #fff;
+
+}
+
+
+
+
