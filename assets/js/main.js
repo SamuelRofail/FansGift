@@ -234,3 +234,23 @@ function togglesearch(){
     console.log(input);
 
 }
+
+function checkinput(str){
+    var input = document.getElementById("input"+str);
+    if (input.hasAttribute("disabled")){
+        input.removeAttribute("disabled");
+        if (str == 3){
+            document.getElementById("input4").removeAttribute("disabled");
+        }
+        console.log(input);
+    }
+    else {
+        input.setAttribute("disabled", true);
+        if (str == 3){
+            document.getElementById("input4").setAttribute("disabled", true);
+
+        }
+    }
+    
+    
+}

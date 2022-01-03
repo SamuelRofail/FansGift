@@ -61,13 +61,64 @@
         </div>
     </div>
     <div class="container-fluid p-0 ">
-        <div class="container    text-center mb-4  " id="competition">
-            <!-- <div id="contentback">
+        <div class="container    text-center mb-4  " id="contestfilter">
+            <div id="contentback">
 
-            </div> -->
+            </div>
             <h2>
                 1st Contest name.
             </h2>
+            <form action="">
+                <div class="row m-0 p-2 justify-content-around ">
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 m-1"  >
+                        <h3>
+                            Number of Winners 
+                        </h3>
+
+                        <input type="text" placeholder="###">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5">
+                        <h3>
+                            Repetition Check
+                        </h3>
+                        <p>Check the box to active Repetition</p>
+
+                        <input type="checkbox" name="" id="" >
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 m-1">
+                        <h3>
+                            # Activation
+                        </h3>
+                        <p>Check the box to active hashtag</p>
+                        <input type="checkbox" name="" id="" onclick="checkinput(1);">
+                        <input type="text" name="" disabled id="input1" placeholder="#example">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 m-1">
+                        <h3>
+                            Answer Activation
+                        </h3>
+                        <p>Check the box to active Answer</p>
+
+                        <input type="checkbox" name="" id="" onclick="checkinput(2);">
+                        <input type="text" name="" disabled id="input2" placeholder="Answer!">
+                    </div>
+                    
+                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 m-1">
+                        <h3>
+                            Mention Activation
+                        </h3>
+                        <p>Check the box to active Mention</p>
+
+                        <input type="checkbox" name="" id="" onclick="checkinput(3);">
+                        <input type="text" name="" disabled id="input3" placeholder="Mention!">
+                        <input type="text" name="" disabled id="input4" placeholder="Mention repeat">
+                    </div>
+                </div>
+                
+                    <input type="submit" value="Submit!">
+                
+            </form>
+
         
     </div>
     <div class="container pt-5 pb-5" id="footer">
