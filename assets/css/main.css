@@ -118,6 +118,7 @@ body{
     border: 0px solid #7430dd;
     box-shadow: #7430dd 0 5px 10px 1px;
     transition: 0,3s;
+    margin-top: 10px;
     
     
 
@@ -1015,11 +1016,12 @@ body{
     opacity: 0.5;
 }
 #showpost{
-    padding: 30px ;
+    padding: 30px 0 ;
     position: relative;
     border: 0px solid #7430dd;
     box-shadow: #7430dd 0 5px 10px 1px;
     margin-top: 10px;
+    
 }
 #showpost #post{
     width: 80%;
@@ -1073,6 +1075,462 @@ body{
 #showpost table tr:nth-child(even) td {
         border-right: 1px solid #fff;
 
+}
+@media screen and (max-width : 576px){
+    #showpost table{
+        width: 100%;
+    }
+}
+/* pricing page */
+
+#pricing{
+    padding: 30px ;
+    position: relative;
+    border: 0px solid #7430dd;
+    box-shadow: #7430dd 0 5px 10px 1px;
+    transition: 0,3s;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.473);
+}
+/* #pricing #contentback{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/a00cc210244ee0c8cd79e2a28b3a10fb.jpg);
+    background-color: #000;
+    background-blend-mode:screen;
+    background-position:center;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+} */
+
+#pricing h2{
+    color: #00acee;
+    font-weight: 600;
+    display: inline;
+    margin: 3px auto;
+    font-size: 36px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#pricing p{
+    color: #687abe;
+    font-weight: 300;
+    display: inline;
+    margin: 8px auto;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.712);
+
+}
+#pricing #priceplan{
+    padding: 8px;
+}
+#pricing #priceplan #plan1{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid #00acee;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+
+}
+#pricing #priceplan #plan1 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #00acee;
+}
+#pricing #priceplan #plan1 #price {
+    border: 2px solid #00acee;
+    margin: 20px auto;
+    width: 150px;
+    color: #00acee;
+
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#pricing #priceplan #plan1 button {
+    background-color: #00acee;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #00acee;
+    border-radius: 34px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#pricing #priceplan #plan1 button:hover{
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff;
+    border-color:#000 ;
+    
+}
+#pricing #priceplan #plan1 p{
+    color: #00acee;
+    font-size: 14px;
+    background-color: transparent;
+
+    
+}
+#pricing #priceplan #plan2{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid transparent;
+    background-color: #00acee;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+
+
+}
+#pricing #priceplan #plan2 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #fff;
+}
+#pricing #priceplan #plan2 #price {
+    border: 2px solid #fff;
+    margin: 20px auto;
+    width: 150px;
+    color: #fff;
+
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#pricing #priceplan #plan2 button {
+    background-color: #fff;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #fff;
+    border-radius: 34px;
+    color: #00acee;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#pricing #priceplan #plan2 button:hover{
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff;
+    border-color:#000 ;
+    
+}
+#pricing #priceplan #plan2 p{
+    color: #fff;
+    font-size: 14px;
+    background-color: transparent;
+
+    
+}
+
+#pricing #priceplan #plan3{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to bottom right ,#012,#113, #124);
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+}
+#pricing #priceplan #plan3:hover ,#pricing #priceplan #plan2:hover ,#pricing #priceplan #plan1:hover{
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+#pricing #priceplan #plan3 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #fff;
+}
+#pricing #priceplan #plan3 #price {
+    border: 2px solid #00acee;
+    margin: 20px auto;
+    width: 150px;
+    color: #fff;
+
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#pricing #priceplan #plan3 button {
+    background-color: #00acee;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #00acee;
+    border-radius: 34px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+#pricing #priceplan #plan3 button:hover{
+    transition: 0.2s;
+    background-color: #fff;
+    color: #00acee;
+    border-color:#fff ;
+    
+}
+#pricing #priceplan #plan3 p{
+    color: #fff;
+    font-size: 14px;
+    background-color: transparent;
+
+    
+}
+
+/* competition page */
+
+#competition{
+    padding: 30px ;
+    position: relative;
+    border: 0px solid #7430dd;
+    box-shadow: #7430dd 0 5px 10px 1px;
+    transition: 0,3s;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.473);
+}
+
+#competition h2{
+    color: #00acee;
+    margin: 15px auto;
+}
+
+#competition #contest #plan1{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid #00acee;
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+}
+#competition #contest #plan1 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #00acee;
+}
+#competition #contest #plan1 #price {
+    border: 2px solid #00acee;
+    margin: 20px auto;
+    width: 150px;
+    color: #fff;
+    overflow: hidden;
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#competition #contest #plan1  img ,#competition #contest #plan2  img,#competition #contest #plan3  img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+
+
+}
+#competition #contest #plan1  img {
+    border: 2px solid #00acee;
+
+}
+#competition #contest #plan2  img{
+    border: 2px solid #fff;
+}
+#competition #contest #plan3  img {
+    border: 2px solid #00acee;
+
+}
+#competition #contest #plan1 a {
+    background-color: #00acee;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #00acee;
+    border-radius: 34px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+
+}
+#competition #contest #plan1 a:hover{
+    transition: 0.2s;
+    background-color: #000;
+    color: #00acee;
+    border-color:#fff ;
+    
+}
+#competition #contest #plan2{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid transparent;
+    background-color: #00acee;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+}
+#competition #contest #plan2 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #fff;
+}
+#competition #contest #plan2 #price {
+    border: 2px solid #00acee;
+    margin: 20px auto;
+    width: 150px;
+    color: #fff;
+    overflow: hidden;
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#competition #contest #plan2 #price img{
+    width: 100%;
+    height: 100%;
+
+
+}
+#competition #contest #plan2 a {
+    background-color: #fff;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #fff;
+    border-radius: 34px;
+    color: #00acee;
+    cursor: pointer;
+    transition: 0.4s;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+
+
+}
+#competition #contest #plan2 a:hover{
+    transition: 0.2s;
+    background-color: #000;
+    color: #00acee;
+    border-color:#000 ;
+    
+}
+#competition #contest #plan3{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid transparent;
+    background-image: linear-gradient(to bottom right ,#012,#113, #124);
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    z-index: 99;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00acee;
+    transition: 0.4s;
+
+}
+#competition #contest #plan3:hover ,#competition #contest #plan2:hover ,#competition #contest #plan1:hover{
+    transform: scale(1.08);
+    transition: 0.2s;
+}
+#competition #contest #plan3 h3{
+    font-size: 34px;
+    margin: 15px auto;
+    color: #fff;
+}
+#competition #contest #plan3 #price {
+    border: 2px solid #00acee;
+    margin: 20px auto;
+    width: 150px;
+    color: #fff;
+
+    height: 150px;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 28px;
+    border-radius: 50% ;
+    
+}
+#competition #contest #plan3 #price img{
+    width: 100%;
+    height: 100%;
+
+}
+#competition #contest #plan3 a {
+    background-color: #fff;
+    padding: 7px;
+    margin-top: 30px;
+    width: 40%;
+    border: 2px solid #00acee;
+    border-radius: 34px;
+    color: #00acee;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+
+    transition: 0.4s;
+
+
+}
+#competition #contest #plan3 a:hover{
+    transition: 0.2s;
+    background-color: #00acee;
+    color: #fff;
+    border-color:#00acee ;
+    
 }
 
 
@@ -1850,6 +2308,12 @@ body{
 #allpackages table tr:nth-child(even) td button svg {
     fill: #fff;
 }
+@media screen and (max-width : 576px){
+    #allpackages table{
+        width: 100%;
+    }
+}
+
 
 
 /* dash-addpackage */
@@ -2046,7 +2510,11 @@ body{
 #allspecial table tr:nth-child(even) td button svg {
     fill: #fff;
 }
-
+@media screen and (max-width : 576px){
+    #allspecial table{
+        width: 100%;
+    }
+}
 /* dash-addspecial page */
 #addspecial{
     text-align: center;
@@ -2210,6 +2678,11 @@ body{
 }
 #allregular table tr:nth-child(even) td button svg {
     fill: #fff;
+}
+@media screen and (max-width : 576px){
+    #allregular table{
+        width: 100%;
+    }
 }
 
 /* dash-addregular page */
