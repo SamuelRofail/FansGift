@@ -1649,7 +1649,7 @@ body{
     #contestfilter form .row div input[type=text]:focus{
         outline-width: 0px;
         border-color: #1f5d75;
-        background-color: #00acee;
+        background-color: #012;
         transition: 0.2s;
         color: #fff;
     }
@@ -1674,7 +1674,155 @@ body{
         border: 0px solid #012;
         }
 
+    
+    /* winners page */
+    #winners{
+        padding: 30px ;
+        position: relative;
+        border: 0px solid #7430dd;
+        box-shadow: #7430dd 0 5px 10px 1px;
+        transition: 0,3s;
+        margin-top: 10px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.767);
+    }
+    
+    #winners h2{
+        color: #00acee;
+        margin: 15px auto;
+    }
+    #winners h3{
+        color: #000;
+        margin: 15px auto;
+    }
+    #winners p{
+        color: #687abe;
+        font-weight: 300;
+        display: inline-block;
+        margin: 10px auto;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.712);
+    
+    }
+    #winners table{
+        width: 80%;
+        margin: 5px auto;
+        border: 1px solid #687abe;
+        background-color: #fff;
+    
+    }
+    #winners table thead{
+        border: 1px solid #687abe;
+        background-color: #000;
+        
+    
+    }
+    #winners table thead th{
+        width: 20%;
+        padding: 5px;
+        border-right: 1px solid #687abe;
+        color: #fff;
+    }
+    #winners table tr:nth-child(even) {
+        background-color: #687abe;
+        color: #fff;
+    }
+    #winners table tr td{
+        border-right: 1px solid #687abe;
+        padding: 5px;
+        font-size: 16px;
+    }
+    #winners table tr:nth-child(even) td {
+            border-right: 1px solid #fff;
+    
+    }
 
+    /* payment page */
+    #payment{
+        padding: 30px ;
+        position: relative;
+        border: 0px solid #7430dd;
+        box-shadow: #7430dd 0 5px 10px 1px;
+        transition: 0,3s;
+        margin-top: 10px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.767);
+    }
+    
+    #payment h2{
+        color: #00acee;
+        margin: 15px auto;
+    }
+    #payment p{
+        color: #687abe;
+        font-weight: 300;
+        margin: 10px auto;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.712);
+    
+    }
+    #payment table{
+       display: block;
+       margin: 0px auto;
+       padding: 5px;
+       width: 100%;
+       background-color: #ccc;
+       border-radius: 10px;
+    
+    }
+    #payment table thead{
+        border-bottom: 1px solid #fff;
+    }
+    #payment table thead th{
+        color: #000;
+        padding: 10px;
+    }
+    #payment table thead th:nth-child(1){
+        width: 40;
+    }
+    #payment table thead th:nth-child(2){
+        width: 20%;
+    }
+    #payment table thead th:nth-child(3){
+        width: 20%;
+    }
+    #payment table thead th:nth-child(4){
+        width: 20%;
+    }
+    #payment table tr:nth-child(even) {
+        width:40%;
+    }
+    #payment table tr td{
+        padding: 15px;
+        color: #00acee;
+
+
+    }
+    #payment table tr:nth-child(even) td {
+    
+    }
+    #payment table tr td img{
+        width: 60px;
+        border-radius: 50%;
+        border: 1px solid #00acee;
+
+        height: 60px;
+    }
+    #payment table tr td h4{
+        font-size: 18px;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 1px;
+        color: #00acee;
+    }
+    #payment table tr td p{
+        font-size: 14px;
+        margin-top: 2px;
+        text-align: left;
+        color: #00acee;
+        background-color: transparent;
+
+    }
 
 /* register page */
 
