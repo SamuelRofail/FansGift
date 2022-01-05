@@ -254,3 +254,15 @@ function checkinput(str){
     
     
 }
+
+
+function resetpassword(){
+    var div = document.getElementById("password");
+    if (div.offsetHeight == 40){
+        div.style.height= "200px";
+        console.log("a7aa");
+    }
+    else {
+        div.style.height = "40px";
+    }
+}

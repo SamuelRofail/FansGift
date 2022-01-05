@@ -1824,6 +1824,271 @@ body{
 
     }
 
+
+    /* about us */
+    #aboutus-page{
+        background-color: rgba(255, 255, 255, 0.87);
+        padding-top: 50px;
+    }
+    #aboutus-page h1{
+        text-align: center;
+        font-size: 52px;
+        margin-bottom: 30px;
+    }
+    #aboutus-page h3{
+        padding-left: 40%;
+        font-size: 30px;
+
+    }
+    #aboutus-page p {
+        color: #666;
+        font-size: 22px;
+    }
+    #aboutus-page p a{
+        color: #222;
+    }
+    #aboutus-page #contactus{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #aboutus-page #contactus h2{
+        font-size: 34px;
+    }
+    #aboutus-page #contactus a{
+        border: 0px solid #000;
+        display: block;
+        width: 180px;
+        text-decoration: none;
+        background-color: #00acee;
+        color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        transition: 0.4s;
+
+    }
+    #aboutus-page #contactus a:hover{
+        transform: scale(0.9);
+        background-color: #000;
+        transition: 0.4s;
+    }
+
+    /* contact us page*/
+    #contact{
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.753);
+        padding-top: 40px;
+    }
+    #contact p{
+        color: #333;
+        font-size: 18px;
+    }
+    #contact p a{
+        color: #000;
+    }
+    #contact form {
+
+    }
+    #contact form input{
+        display: block;
+        margin: 5px auto;
+        width: 40%;
+        padding: 7px;
+        border: 1px solid #00acee;
+        border-radius: 5px;
+        transition: 0.2s;
+    }
+    #contact form input:focus{
+        outline : 2px solid #00acee;
+        transition: 0.2s;
+
+    }
+    #contact form textarea{
+        border: 1px solid #00acee;
+        display: block;
+        margin: 5px auto;
+        width: 40%;
+        border-radius: 5px;
+        transition: 0.2s;
+
+
+
+    }
+    #contact form textarea:focus{
+        outline : 2px solid #00acee;
+        
+
+    }
+    #contact form input[type=submit]{
+        display: block;
+        margin: 20px auto;
+        width: 18%;
+        padding: 10px;
+        border: 0px solid #00acee;
+        border-radius: 25px;
+        transition: 0.2s;
+        color: #fff;
+        background-color: #00acee;
+        cursor: pointer;
+    }
+    #contact form input[type=submit]:hover{
+        background-color: #000;
+        transition: 0.3s;
+        transform: scale(0.9);
+    }
+
+
+    /* policy page */
+   
+    #policy {
+    }
+    #policy h2{
+        font-size: 42px;
+    }
+    #policy h4{
+        margin-top: 26px;
+    }
+    #policy p{
+        width: 70%; 
+        margin: 5px auto;
+        color: #444;
+        font-size: 20px;
+    }
+    #policy #contactus{
+        text-align: center;
+        margin-top: 20px;
+    }
+    #policy #contactus h2{
+        font-size: 34px;
+    }
+    #policy #contactus a{
+        border: 0px solid #000;
+        display: block;
+        width: 180px;
+        text-decoration: none;
+        background-color: #00acee;
+        color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+        transition: 0.4s;
+
+    }
+    #policy #contactus a:hover{
+        transform: scale(0.9);
+        background-color: #000;
+        transition: 0.4s;
+    }
+
+
+    /* profile page */
+    #profile{
+    }
+    #profile #profile-info{
+        border: 1px solid #00acee;
+        background-color: #00acee;
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-radius: 20px ;
+    }
+    #profile #profile-info img{
+        display: block;
+        margin: 5px auto;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    #profile #profile-info button{
+        display: block;
+        margin: 3px auto;
+        background-color: transparent;
+        border: 0px solid transparent;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #profile #profile-info h3 span{
+        color: #fff;
+    }
+    #profile #profile-info #password{
+        height: 40px;
+        overflow:hidden;
+        transition: 0.3s;
+    }
+    #profile #profile-info #password h3{
+        cursor: pointer;
+    }
+    #profile #profile-info #password form{
+        text-align: center;
+    }
+    #profile #profile-info #password input{
+        width: 80%;
+        border: 2px solid #555;
+        padding: 3px;
+        border-radius: 5px;
+        display: block;
+        margin: 5px auto;
+        transition: 0.3s;
+
+    }
+    #profile #profile-info #password input:focus{
+        outline-width:  0;
+        border-width: 3px;
+        transition: 0.3s;
+
+    }
+
+
+    #profile #profile-info #password input[type=submit]{
+        background-color: #555;
+        color: #fff;
+        width: 60%;
+        cursor: pointer;
+        border-width: 0;
+
+        transition: 0.3s;
+
+    }
+    #profile #profile-info #password input[type=submit]:hover{
+        background-color: #fff;
+        color: #555;
+        transition: 0.3s;
+    }
+
+    #profile #histroy{
+        border: 0px solid #000;
+        border-radius: 20px;
+        background-color: #aaa;
+        padding: 10px;
+    }
+    #profile #histroy h2{
+        text-align: center;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        
+    }
+    #profile #histroy ul{
+        list-style: none;
+
+    }
+    #profile #histroy ul li{
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #3a3a3a;
+        margin: 5px auto;
+        color: #fff;
+
+    }
+    #profile #histroy ul li:nth-child(even){
+        background-color: #fff;
+        color: #3a3a3a;
+    }
+
+
 /* register page */
 
 #register {
